@@ -1,4 +1,75 @@
+@import "./commonSource.css";
+
+
 html, body{
     margin: 0;
     padding: 0;
+    background-color: #33264E;
+    
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5px;
+    height: 150px;
+    width: 800px;
+}
+.button-header{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;  
+}
+.btn{
+
+    background: linear-gradient(0.25turn, #FF6071,#FF7E8E);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+}
+
+button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;   
+}
+h1{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-family: "Vampiro One", cursive;
+    letter-spacing: 1px;
+    font-weight: 200;
+    font-size: 35px;
+    margin-left: -100px;
+}
+.line{
+    height: 1px;
+    width: 800px;
+    background: #fff;
+}
+.menu{
+   
+    text-decoration: none;
+
+}
+li{
+    display: inline;
+    color: #fff;
+    margin-left: 5px;
+    font-family: "Mulish", sans-serif;
+    font-size: smaller;
+    font-weight: 300;
 }
