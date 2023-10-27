@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Vampiro+One&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+:root{
+    --main-container-maxWidth: 1200px;
+    --articles-container-maxWidth: 800px;
+    --sidebar-maxWidth: 332px;
+    --carousel-maxWidth: 1600px;
+    --carousel-maxHeight: 480px;
+    --article-image-maxWidth: 786px;
+    --article-image-maxHeight: 491px;
+
+    --bg-color: #33264E;
+    --footer-bg-color: #362953;
+    --article-bg-color:#362953;
+    --links-color: #EE3E52;
+    --button-gradient: linear-gradient(0.25turn, #FF6071,#FF7E8E);
+    --purple-cat-color: #673AB7;
+    --blue-cat-color: #5567DA;
+    --lightblue-cat-color: #1E88E5;
+    --green-cat-color: #27CC81;
+    --aqua-cat-color: #38C4D1;
+    --pink-cat-color: #E91E63;
+    --twitter-color:  #63CDF1;
+    --facebook-color: #507CBE;
+    --instagram-color: #D62976;
+    --pinterest-color: #EE3E52;
+
+    --font-logo: "Vampiro One", cursive;
+    --font-titles: "Fairplay Display", serif;
+    --font-text: "Mulish", sans-serif;
+}
