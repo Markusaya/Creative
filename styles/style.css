@@ -24,13 +24,14 @@ html, body{
         width: 100%;
         font-family: var(--font-text);
         background-color: black;
+        
        
         & >img{
             position: absolute;
             height: 100%;
             width: 100%;
             z-index: 1;
-            opacity: 0.5;
+            opacity: 0.3;
             object-fit: cover;
             object-position: 0 -130px;
         }
@@ -39,25 +40,62 @@ html, body{
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            font-size: 1rem;
             z-index: 2;
+            
             & ul{
                 padding: 0;
+                list-style-type: none;
+                font-family: var(--font-text);
+                font-size: 20px;
+
+                >li:before{
+                    content: "\2022";
+                    margin-right: 8px;
+                    color: var(--green-cat-color);
+                }
             }
-    
             & h1{
                 font-family: var(--font-titles);
+                font-weight: 400;
+                font-size: 3.5rem;
+                margin: 24px 0;
                 
             }
             .author{
                 display: flex;
-                
+                gap: 24px;
+                font-family: var(--font-text);
+                font-size: 20px;
     
                 & img{
-                    width: 50px;
-                    aspect-ratio: 1;
+                    width: 60px;
+                    height: 60px;
                     border-radius: 50%;
+                    object-fit: cover;
                 }
-                & button{}
+                & ul{
+                    list-style-type: none;
+
+                    >li:before{
+                        content: "◆";
+                        margin-right: 16px;
+                        color: var(--links-color);
+                    }
+                }
+            }
+            & button{
+                box-sizing: border-box;
+                background-color: var(--links-color);
+                color: white;
+                margin-top: 24px;
+                font-family: var(--font-text);
+                font-weight: 600;
+                width: 220px;
+                height: 50px;
+                border: none;
+                font-size: 20px;
+                padding: 10px;
             }
         } 
     }
