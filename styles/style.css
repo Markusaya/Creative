@@ -145,12 +145,14 @@ i{
                 font-family: var(--font-text);
                 font-size: 18px;
                 font-weight: 300;
-    
-                & img{
+                
+                .imgJohn{
                     width: 60px;
                     height: 60px;
                     border-radius: 50%;
-                    object-fit: cover;
+                    background-image: url("../rss/pexels-photo-941693.jpeg");background-repeat: no-repeat;
+                    background-size: 250%;
+                    background-position: -45px -10px;
                 }
                 & ul.info{
                     list-style-type: none;
