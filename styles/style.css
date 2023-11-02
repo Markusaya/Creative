@@ -214,3 +214,20 @@ i{
         }
     }
 }
+/*Main content*/
+.main-content-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: var(--main-container-maxWidth);
+    margin: 0 auto;
+    gap: 68px;
+    margin-top: 64px;
+
+    .siders-container{
+        width: var(--sidebar-maxWidth);
+    }
+}
+.articles-container{
+    width: var(--articles-container-maxWidth);
+}
