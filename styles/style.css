@@ -1,77 +1,82 @@
+@import "./commonSource.css";
+
 html, body{
     margin: 0;
     padding: 0;
-    background-color: #33264E;
-    
+    background-color: var(--bg-color);
 }
+/*Header*/
 header{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
+    margin: 0 auto;
+    margin-bottom: 42px;
+    max-width: var(--main-container-maxWidth);
 }
-
 .header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 5px;
-    height: 150px;
-    width: 800px;
+    height: 180px;
+    width: 100%;
 }
 .button-header{
-
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: row;  
 }
 .btn{
-
-    background: linear-gradient(0.25turn, #FF6071,#FF7E8E);
+    background: var(--button-gradient);
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
     border: none;
-    margin-left: 5px;
-
-}
-
-button{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;   
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
 }
 h1{
     display: flex;
     justify-content: center;
     color: #fff;
-    font-family: "Vampiro One", cursive;
+    font-family: var(--font-logo);
     letter-spacing: 1px;
     font-weight: 200;
-    font-size: 35px;
-    margin-left: -100px;
+    font-size: 72px;
+    margin-left: -135px;
+    margin-top: 17px;
+    margin-bottom: 17px;
 }
 .line{
+    margin-top: 42px;
     height: 1px;
-    width: 800px;
+    width: 100%;
     background: #fff;
+    opacity: 0.3;
 }
 .menu{
-   
+    margin-top: 24px;
     text-decoration: none;
-
 }
 li{
     display: inline;
     color: #fff;
     margin-left: 5px;
-    font-family: "Mulish", sans-serif;
-    font-size: smaller;
+    font-family: var(--font-text);
+    letter-spacing: 3px;
+    font-size: 19px;
     font-weight: 300;
+    margin-right: 5px;
 }
+i{
+    font-size: 24px;
+}
+/*Carousel*/
 .carousel-container{
     max-width: var(--carousel-maxWidth);
     height: var(--carousel-maxHeight);
@@ -82,7 +87,6 @@ li{
     margin: 0 auto;
     color: white;
     
-
     .carousel{
         position: relative;
         display: flex;
@@ -94,13 +98,12 @@ li{
         font-family: var(--font-text);
         background-color: black;
         
-       
         & >img{
             position: absolute;
             height: 100%;
             width: 100%;
             z-index: 1;
-            opacity: 0.3;
+            opacity: 0.4;
             object-fit: cover;
             object-position: 0 -130px;
         }
@@ -116,7 +119,11 @@ li{
                 padding: 0;
                 list-style-type: none;
                 font-family: var(--font-text);
-                font-size: 20px;
+                margin: 0;
+
+                & li{
+                    font-size: 16px;
+                }
 
                 >li:before{
                     content: "\2022";
@@ -128,14 +135,16 @@ li{
                 font-family: var(--font-titles);
                 font-weight: 400;
                 font-size: 3.5rem;
-                margin: 24px 0;
-                
+                margin: 24px 0; 
             }
             .author{
                 display: flex;
+                justify-content: center;
+                align-items: center;
                 gap: 24px;
                 font-family: var(--font-text);
-                font-size: 20px;
+                font-size: 18px;
+                font-weight: 300;
     
                 & img{
                     width: 60px;
@@ -143,8 +152,12 @@ li{
                     border-radius: 50%;
                     object-fit: cover;
                 }
-                & ul{
+                & ul.info{
                     list-style-type: none;
+                    
+                    & li{
+                        font-size: 16px;
+                    }
 
                     >li:before{
                         content: "◆";
@@ -153,18 +166,27 @@ li{
                     }
                 }
             }
-            & button{
-                box-sizing: border-box;
-                background-color: var(--links-color);
-                color: white;
+            .button-container{
+                width: 224px;
+                height: 54px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #ff8291;
                 margin-top: 24px;
-                font-family: var(--font-text);
-                font-weight: 600;
-                width: 220px;
-                height: 50px;
-                border: none;
-                font-size: 20px;
-                padding: 10px;
+
+                & button{
+                    box-sizing: border-box;
+                    background: #ff5e71;
+                    color: white;
+                    font-family: var(--font-text);
+                    font-weight: 600;
+                    width: 220px;
+                    height: 50px;
+                    border: none;
+                    font-size: 20px;
+                    padding: 10px;
+                }
             }
         } 
     }
@@ -184,7 +206,7 @@ li{
         .indicator{
             width: 15px;
             height: 15px;
-            border: 1px solid red;
+            border: 1px solid white;
             border-radius: 50%;
             gap: 4px;
         }
