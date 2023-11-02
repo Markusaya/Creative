@@ -37,6 +37,8 @@ header{
     justify-content: center;
     align-items: center;
     color: #fff;
+    border: none;
+    margin-left: 5px;
 
 }
 
