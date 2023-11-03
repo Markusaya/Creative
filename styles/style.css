@@ -231,7 +231,6 @@ i{
         .siders-small-container{
             margin-bottom: 64px;
         }
-
         .sider-heading{
             display: flex;
             justify-content: space-between;
@@ -289,7 +288,6 @@ i{
                         font-family: var(--font-titles);
                         font-weight: 200;
                     }
-
                     & p{
                         font-size: 13px;
                         margin: 0;
@@ -332,7 +330,6 @@ i{
                         font-size: 10px;
                     }
                 }
-
                 & i{
                     font-size: 35px;
                     margin: 8px 20px;
@@ -429,7 +426,6 @@ i{
             .blue:before{
                 color: var(--lightblue-cat-color);
             }
-            
         }
         .sider4-img{
             width: 80%;
