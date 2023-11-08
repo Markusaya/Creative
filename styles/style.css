@@ -421,7 +421,7 @@ i {
 .siders-container {
     width: var(--sidebar-maxWidth);
     color: white;
-    margin-top: -106px;
+    align-self: flex-start;
 
     .siders-small-container {
         margin-bottom: 64px;
@@ -696,7 +696,7 @@ i {
 .footerInfo {
     max-width: var(--main-container-maxWidth);
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: nowrap;
     gap: 20px;
@@ -705,24 +705,94 @@ i {
 
 }
 
-.footerReseaux {
-    height: 240px;
-    width: 400px;
-    background: var(--article-bg-color);
+.footerInfo{
+    display: flex;
+    color: #fff;
 }
-
-.footerSubscribe {
-    height: 240px;
-    width: 400px;
+.footerReseaux{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
     background: var(--article-bg-color);
+    font-family: var(--font-titles);
 }
+.footerSocialTitle{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20px;
+    margin-top: 10px;
 
-.footerMail {
-    height: 240px;
-    width: 400px;
-    background: var(--article-bg-color);
+    & h3{
+        margin: 0;
+    }
+
+    & div{
+        height: 2px;
+        width: 160px;
+        background: var(--links-color);
+    }
 }
+.footerSocialReseaux{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
 
+    .Tw{
+        
+        & i{
+            color: var(--twitter-color);
+        }
+    }
+    .Fb{
+        & i{
+            color: var(--facebook-color);
+        }
+    }
+    .Pi{
+        & i{
+            color: var(--pinterest-color);
+        }
+    }
+    .In{
+        & i{
+            color: var(--instagram-color);
+        }
+    }
+}
+.footerMedia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.footerSubscribe{
+
+    .footerSubscribeTitle{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        & h3{
+            margin: 0;
+            font-size: 24px;
+        }
+
+        & div{
+            height: 2px;
+            width: 90px;
+            background: var(--links-color);
+        }
+    }
+    & p{
+        margin: 8px 0;
+    }
+}
 .footerLine {
     width: 1200px;
     height: 2px;
@@ -867,14 +937,15 @@ i {
         }
     }
 }
-
-.articles2-Btn {
-    position: absolute;
+.link2{
     display: flex;
     justify-content: space-between;
+    width: 100%;
+}
+.articles2-Btn { 
+    display: flex;
     align-items: center;
-    top: 10%;
-    left: 84%;
+   
 
     & button.artBtn {
         width: 35px;
