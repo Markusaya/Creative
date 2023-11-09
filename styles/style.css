@@ -676,21 +676,31 @@ i {
     height: 100px;
     background: var(--article-bg-color);
     margin-bottom: 50px;
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center; */
+
+}
+.footerTitleContainer{
+    width: 63%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
-
 .footerCreative {
     font-family: var(--font-logo);
     font-size: 64px;
     color: #fff;
-    margin-left: 360px;
+    /* margin-left: 360px; */
 }
 
 .footerMenu {
-    margin-right: 430px;
+    /* margin-right: 430px; */
+    
+    & li{
+        font-size: 16px;
+    }
 }
 
 .footerInfo {
@@ -699,7 +709,7 @@ i {
     justify-content: flex-start;
     align-items: center;
     flex-wrap: nowrap;
-    gap: 20px;
+    gap: 25px;
     margin: auto;
     margin-bottom: 50px;
 
@@ -792,6 +802,18 @@ i {
     & p{
         margin: 8px 0;
     }
+}
+.footerMail{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+    background: var(--button-gradient);
+    color: white;
+    padding: 16px;
+    font-family: var(--font-text);
 }
 .footerLine {
     width: 1200px;
@@ -979,4 +1001,11 @@ i {
     font-size: 20px;
     letter-spacing: 2px;
     line-height: 34px;
+}
+.lorem2-2{
+    font-family: var(--font-text);
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 34px;
+    margin-bottom: 260px;
 }
