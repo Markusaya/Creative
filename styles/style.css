@@ -250,8 +250,8 @@ i {
 .container-art {
     position: relative;
     display: flex;
-    width: 800px;
-    height: 370px;
+    max-width: 800px;
+    -maxheight: 370px;
     gap: 20px;
     box-shadow: inset 0 0 1em transparent, 0 0 1em rgba(17, 17, 17, 0.494);
     background: var(--article-bg-color);
@@ -295,7 +295,7 @@ i {
     margin-left: 30px;
 
     & ul {
-        position: absolute;
+        /* position: absolute; */
         top: 15%;
         padding: 0;
         list-style-type: none;
@@ -350,7 +350,7 @@ i {
     }
 
     & h2 {
-        margin-top: 80px;
+        margin: 0;
         margin-bottom: -10px;
         font-weight: 100;
         color: #fff;
@@ -367,14 +367,20 @@ i {
     }
 
 }
-
-.articlesBtn {
-    position: absolute;
+.catBtn{
     display: flex;
     justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.articlesBtn {
+    /* position: absolute; */
+    display: flex;
+    /* justify-content: space-between; */
     align-items: center;
-    top: 10%;
-    left: 82%;
+    /* top: 10%;
+    left: 82%; */
+    margin-right: 40px;
 
     & button.artBtn {
         width: 35px;
@@ -815,8 +821,12 @@ i {
     padding: 16px;
     font-family: var(--font-text);
 }
+.SubAndMailContainer{
+    display: flex;
+    gap: 20px;
+}
 .footerLine {
-    width: 1200px;
+    max-width: 1200px;
     height: 2px;
     background: #fff;
     margin: auto;
@@ -826,23 +836,25 @@ i {
 
 .footerCopyUp {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: row;
     height: 100px;
-    width: auto;
+    max-width: 1200px;
     background: transparent;
     margin-bottom: 20px;
+    margin: 0 auto;
     color: #fff;
     font-family: var(--font-text);
 }
 
 .footerCopyright {
-    margin-left: 450px;
+    /* margin-left: 450px; */
+    
 }
 
 .footerUp {
-    margin-left: 400px;
+    /* margin-left: 400px; */
+    /* align-self: flex-end; */
 }
 
 .footerUp:after {
@@ -868,7 +880,6 @@ i {
 
 .articles2-container {
     max-width: var(--articles-container-maxWidth);
-
 }
 
 .container2-art {
@@ -934,6 +945,11 @@ i {
         font-weight: 300;
         size-adjust: 25px;
 
+
+        .johnDoe2{
+            display: flex;
+            gap: 20px;
+        }
         .imgJohn2 {
             width: 60px;
             height: 60px;
@@ -1009,3 +1025,125 @@ i {
     line-height: 34px;
     margin-bottom: 260px;
 }
+.johnDoe2SmallDevice{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: var(--font-text);
+
+
+    .imgJohn2SmallDevice{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background-image: url("../rss/pexels-photo-941693.jpeg");
+        background-repeat: no-repeat;
+        background-size: 250%;
+        background-position: -90px -20px;
+    }
+}
+
+
+/*Ipad*/
+@media only screen
+    and (min-width: 768px)
+    and (max-width: 1024px) {
+    .siders-container{
+        display: none;
+    }
+    .SubAndMailContainer{
+        flex-direction: column;
+    }
+    .menu{
+        display: none;
+    }
+    .footerMenu{
+        display: none;
+    }
+    .button-header{
+        display: none;
+    }
+    .title h1{
+        margin-left: 0;
+    }
+    .line{
+        margin-top: 0;
+    }
+    .footerTitleContainer{
+        margin: 0;
+        justify-content: flex-start;
+    }
+    .content h1{
+        text-align: center;
+    }
+    .content2 .author2 .johnDoe2{
+        display: none;
+    }
+    .lorem2-2{
+        margin-bottom: 80px;
+    }
+    .johnDoe2SmallDevice{
+        display: flex;
+    }
+}
+
+/*Iphone*/
+@media only screen 
+  and (min-width: 320px) 
+  and (max-width: 768px){
+    .siders-container{
+        display: none;
+    }
+    .SubAndMailContainer{
+        flex-direction: column;
+    }
+    .menu{
+        display: none;
+    }
+    .footerMenu{
+        display: none;
+    }
+    .button-header{
+        display: none;
+    }
+    .title h1{
+        margin-left: 0;
+    }
+    .line{
+        margin-top: 0;
+    }
+    .footerInfo{
+        flex-direction: column;
+    }
+    .footerTitleContainer{
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .footerCopyUp{
+        flex-direction: column;
+    }
+    .content h1{
+        text-align: center;
+    }
+    .container-art{
+        flex-direction: column;
+    }
+    .suiteBtn{
+        display: none;
+    }
+    .imgArticles{
+        justify-content: center;
+        align-items: center;
+    }
+    .content2 .author2 .johnDoe2{
+        display: none;
+    }
+    .lorem2-2{
+        margin-bottom: 80px;
+    }
+    .johnDoe2SmallDevice{
+        display: flex;
+    }
+  }
