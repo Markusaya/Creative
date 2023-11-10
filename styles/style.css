@@ -831,7 +831,7 @@ i {
     flex-direction: row;
     height: 100px;
     width: auto;
-    background: var(--article-bg-color);
+    background: transparent;
     margin-bottom: 20px;
     color: #fff;
     font-family: var(--font-text);
