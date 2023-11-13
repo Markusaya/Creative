@@ -1,10 +1,43 @@
 @import "./commonSource.css";
 
+
 html,
 body {
     margin: 0;
     padding: 0;
     background-color: var(--bg-color);
+    position: relative;
+}
+
+/*LeftMenuMedia*/
+.leftMenu{
+    box-sizing: border-box;
+    padding: 32px;
+    width: 30%;
+    height: 100vh;
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    background: var(--article-bg-color);
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    padding-top: 80px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.363);
+
+
+& li{
+    font-size: 16px;
+}
+
+}
+/*MegaMain*/
+.megaMain{
+    width: 100vw;
+    position: absolute;
 }
 
 /*Header*/
@@ -24,6 +57,26 @@ header {
     justify-content: space-between;
     height: 180px;
     width: 100%;
+}
+.burgerMenu{
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    display: none;
+
+    & i{
+        font-size: 32px;
+    }
+}
+.crossMenu{
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    display: none;
+
+    & i{
+        font-size: 32px;
+    }
 }
 
 .button-header {
@@ -679,7 +732,9 @@ i {
 
 .footerTitle {
     width: auto;
+    /*
     height: 100px;
+    */
     background: var(--article-bg-color);
     margin-bottom: 50px;
     /* display: flex;
@@ -833,16 +888,22 @@ i {
     margin-bottom: 20px;
     opacity: 0.3;
 }
+.footerLastLine{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 .footerCopyUp {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100px;
-    max-width: 1200px;
+    width: 740px;
     background: transparent;
     margin-bottom: 20px;
-    margin: 0 auto;
     color: #fff;
     font-family: var(--font-text);
 }
@@ -1044,8 +1105,14 @@ i {
         background-position: -90px -20px;
     }
 }
-
-
+ 
+/*Deskstop*/
+/* @media only screen
+    and (min-width: 1025px){
+        .burgerMenu{
+            display: none;
+        }
+    } */
 /*Ipad*/
 @media only screen
     and (min-width: 768px)
@@ -1056,8 +1123,19 @@ i {
     .SubAndMailContainer{
         flex-direction: column;
     }
+    .header{
+        width: 800px;
+        margin: 0 auto;
+    }
     .menu{
         display: none;
+    }
+    .carousel-container{
+        width: 800px;
+        margin: 0 auto;
+    }
+    .sliderImage {
+        object-position: 0 -75px !important;
     }
     .footerMenu{
         display: none;
@@ -1075,6 +1153,9 @@ i {
         margin: 0;
         justify-content: flex-start;
     }
+    .footerCopyUp{
+        width: 100%;
+    }
     .content h1{
         text-align: center;
     }
@@ -1086,6 +1167,15 @@ i {
     }
     .johnDoe2SmallDevice{
         display: flex;
+    }
+    .burgerMenu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .articles2-container{
+        width: 800px;
+        margin: 0 auto;
     }
 }
 
@@ -1105,8 +1195,24 @@ i {
     .footerMenu{
         display: none;
     }
+    .header{
+        width: 500px;
+        margin: 0 auto;
+    }
     .button-header{
         display: none;
+    }
+    .burgerMenu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .carousel-container{
+        width: 500px;
+        margin: 0 auto;
+    }
+    .sliderImage {
+        object-position: 0 0 !important;
     }
     .title h1{
         margin-left: 0;
@@ -1129,6 +1235,9 @@ i {
     }
     .container-art{
         flex-direction: column;
+        width: 500px;
+        margin: 0 auto;
+        margin-bottom: 32px;
     }
     .suiteBtn{
         display: none;
@@ -1146,4 +1255,31 @@ i {
     .johnDoe2SmallDevice{
         display: flex;
     }
+    .articles2-container{
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .p2-imgContainer{
+        max-width: 500px;
+    }
+    .imgArticles-1{
+       width: 100% !important;
+       object-position: -50px 0px !important;
+    }
+    .imgArticles-2{
+        width: 100% !important;
+        object-position: 0px -40px !important;
+
+    }
+    .imgArticles-3{
+        width: 100% !important;
+        object-position: 0px -252px !important;
+
+    }
+    .imgArticles-4{
+        width: 100% !important;
+        object-position: 0px -300px !important;
+
+    }
+
   }
