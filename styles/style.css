@@ -123,8 +123,8 @@ header {
 }
 
 .btn:hover {
-    color: #ff5e71;
-    text-shadow: 0px 0px 30px #fd926e;
+    color: #362953;
+    text-shadow: 0px 0px 50px #362953;
     -moz-transition: all 0.2s ease-in;
     -o-transition: all 0.2s ease-in;
     -webkit-transition: all 0.2s ease-in;
@@ -303,6 +303,7 @@ i {
                     border: none;
                     font-size: 20px;
                     padding: 10px;
+                    cursor: pointer;
                 }
             }
         }
@@ -328,6 +329,18 @@ i {
             gap: 4px;
         }
     }
+    .button-container:hover{
+        color: #ff5e71;
+        text-shadow: 0px 0px 50px #fd926e;
+        text-decoration: none;
+        padding: 2px 2px;
+        border-radius: 5px;
+        font-weight: normal;
+        transform-origin: center bottom;
+        transition: all 0.3s ease-in-out;
+        transform: perspective(100px) rotateX(25deg);
+    }
+    
 }
 
 /*Main content*/
@@ -494,16 +507,16 @@ i {
     }
 }
 
-.artBtn:hover {
-    color: #ff5e71;
-    text-shadow: 0px 0px 30px #fd926e;
+button.artBtn:hover {
+    color: #362953;
+    text-shadow: 0px 0px 50px #362953;
     -moz-transition: all 0.2s ease-in;
     -o-transition: all 0.2s ease-in;
     -webkit-transition: all 0.2s ease-in;
     transition: all 0.2s ease-in;
     cursor: pointer;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     
 }
 
@@ -541,13 +554,12 @@ i {
     color: #ff5e71;
     text-shadow: 0px 0px 30px #fd926e;
     text-decoration: none;
-    padding: 5px 5px;
+    padding: 2px 2px;
     border-radius: 5px;
-    font-weight: normal;
-    text-transform: uppercase;
+    font-weight: normal;  
     transform-origin: center bottom;
     transition: all 0.3s ease-in-out;
-    transform: perspective(200px) rotateX(25deg);
+    transform: perspective(100px) rotateX(25deg);
     cursor: pointer;
 }
 .suiteBtn>button:hover {
@@ -557,7 +569,6 @@ i {
     padding: 5px 10px;
     border-radius: 5px;
     font-weight: normal;
-    text-transform: uppercase;
     transform-origin: center bottom;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
