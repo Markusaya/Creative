@@ -90,6 +90,28 @@ header {
     transition: all 0.2s ease-in;
     cursor: pointer;
 }
+/*
+i:hover{
+    animation: pulse 2s infinite;
+}
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 #ff5e71;
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
+*/
+
 
 .crossMenu {
     width: 40px;
@@ -172,11 +194,11 @@ li {
 
 li:hover {
     color: #ff5e71;
-    text-shadow: 0px 0px 30px #fd926e;
+    text-shadow: 0px 0px 50px #fd926e;
     -moz-transition: all 0.2s ease-in;
     -o-transition: all 0.2s ease-in;
     -webkit-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
+    transition: all 0.3s ease-in-out;
     cursor: pointer;
     font-size: 24px;
 }
@@ -291,6 +313,8 @@ i {
                 align-items: center;
                 background-color: #ff8291;
                 margin-top: 24px;
+                transition: all 0.5s ease-in-out;
+               
 
                 & button {
                     box-sizing: border-box;
@@ -331,16 +355,43 @@ i {
     }
     .button-container:hover{
         color: #ff5e71;
-        text-shadow: 0px 0px 50px #fd926e;
+        box-shadow: 0px 0px 50px #c3718b;
         text-decoration: none;
         padding: 2px 2px;
         border-radius: 5px;
         font-weight: normal;
         transform-origin: center bottom;
-        transition: all 0.3s ease-in-out;
+        transition: all 0.5s ease-in-out;
         transform: perspective(100px) rotateX(25deg);
     }
-    
+     .button-container>button:hover{
+            color: #ff5e71;
+            text-shadow: 0px 0px 50px #fd926e;
+            text-decoration: none;
+            padding: 2px 2px;
+            border-radius: 5px;
+            font-weight: normal;
+            transform-origin: center bottom;
+            transition: all 0.5s ease-in-out;  
+            animation: pulse 2s infinite;
+         }
+         
+}
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 #ff5e71;
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
 }
 
 /*Main content*/
@@ -552,7 +603,7 @@ button.artBtn:hover {
 }
 .suiteBtn:hover{
     color: #ff5e71;
-    text-shadow: 0px 0px 30px #fd926e;
+    box-shadow: 0px 0px 30px #fd926e;
     text-decoration: none;
     padding: 2px 2px;
     border-radius: 5px;
@@ -561,6 +612,8 @@ button.artBtn:hover {
     transition: all 0.3s ease-in-out;
     transform: perspective(100px) rotateX(25deg);
     cursor: pointer;
+
+	
 }
 .suiteBtn>button:hover {
     color: #e4d4d6;
@@ -572,7 +625,24 @@ button.artBtn:hover {
     transform-origin: center bottom;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
+    animation: pulse 2s infinite;
     
+}
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
 }
 
 /*Sider content*/
